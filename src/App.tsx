@@ -5,14 +5,14 @@ function App() {
   return (
     <>
       <ReCaptcha
-        siteKey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+        siteKey="6LdrbvklAAAAAGMcyiX70N_J0QZGycnpDdTJYTtK"
         theme="light"
         size="normal"
         onSuccess={(captcha) => console.log(`Successful, result is ${captcha}`)}
-        // onError={() =>
-        //   console.log("Something went wrong, check your conenction")
-        // }
-        // onExpire={() => console.log("Verification has expired, re-verify.")}
+        onError={() =>
+          console.log("Something went wrong, check your conenction")
+        }
+        onExpire={() => console.log("Verification has expired, re-verify.")}
       />
     </>
   );
