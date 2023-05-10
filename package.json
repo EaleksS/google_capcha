@@ -10,9 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@matt-block/react-recaptcha-v2": "^2.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-google-recaptcha-v3-non-autoload": "^1.10.12",
     "recaptcha-v3-react-function-async": "^0.0.3",
     "sass": "^1.62.1"
   },

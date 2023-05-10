@@ -1,19 +1,16 @@
 import "./App.css";
-import ReCaptcha from "@matt-block/react-recaptcha-v2";
+import {
+  GoogleReCaptcha,
+  GoogleReCaptchaProvider,
+} from "react-google-recaptcha-v3-non-autoload";
 
 function App() {
   return (
     <>
-      <ReCaptcha
-        siteKey="6LdrbvklAAAAAGMcyiX70N_J0QZGycnpDdTJYTtK"
-        theme="light"
-        size="normal"
-        onSuccess={(captcha) => console.log(`Successful, result is ${captcha}`)}
-        onError={() =>
-          console.log("Something went wrong, check your conenction")
-        }
-        onExpire={() => console.log("Verification has expired, re-verify.")}
-      />
+      <GoogleReCaptchaProvider reCaptchaKey="6LdrbvklAAAAAGMcyiX70N_J0QZGycnpDdTJYTtK">
+        <GoogleReCaptcha onVerify={(v) => console.log(v)} />
+      </GoogleReCaptchaProvider>
+      , ,
     </>
   );
 }
