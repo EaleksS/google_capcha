@@ -6,7 +6,7 @@ const App: FC = () => {
   return (
     <>
       <ReCAPTCHA
-        sitekey="6LdrbvklAAAAAKc2anqIkJrTREXWKHiwZf0v6mAN"
+        sitekey="6LdrbvklAAAAAGMcyiX70N_J0QZGycnpDdTJYTtK"
         onChange={(value) => console.log("Captcha value:", value)}
       />
     </>
