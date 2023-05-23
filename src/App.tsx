@@ -10,7 +10,7 @@ const App: FC = () => {
   useEffect(() => {
     if (typeof captcha !== "string") return;
 
-    document.location.href = "https://cosmos-sochi.ru/thankyou";
+    document.location.href = "https://alean-ak.ru/thankyou";
   }, [captcha]);
 
   return (
